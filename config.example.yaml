@@ -1,0 +1,27 @@
+# Copy to config.yaml and fill in your values.
+# Environment variables override these (EH_API_KEY, EH_BASE_URL, EH_MODEL, ...).
+
+ai:
+  # Any OpenAI-compatible endpoint: OpenAI / DeepSeek / Kimi / Ollama / ...
+  base_url: "https://api.deepseek.com/v1"
+  api_key: "sk-your-key-here"
+  model: "deepseek-chat"
+
+hotkey:
+  # Examples: "f8", "f9", "alt+\\", "ctrl+\\", "ctrl+alt+d"
+  # Use the `keyboard` library syntax. Combine keys with '+'.
+  translate: "f8"
+
+language:
+  target: "zh"   # 'zh' | 'ja' | 'en' | ...
+
+popup:
+  close_on_focus_lost: true
+  pause_close_on_hover: true
+
+app:
+  autostart: false
+  tray: true
+
+storage:
+  db_path: "data/english-helper.db"
